@@ -7,7 +7,7 @@ const NavigationButtons = function () {
       <button
         className="w-10 h-10 flex justify-center items-center bg-gray-200 rounded-full shadow hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 transition"
         aria-label="Previous"
-        tabIndex="0"
+        tabIndex={0}
       >
         <span className="text-xl font-bold" aria-hidden="true">
           ←
@@ -18,7 +18,7 @@ const NavigationButtons = function () {
       <button
         className="w-10 h-10 flex justify-center items-center bg-gray-200 rounded-full shadow hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 transition"
         aria-label="Next"
-        tabIndex="0"
+        tabIndex={0}
       >
         <span className="text-xl font-bold" aria-hidden="true">
           →

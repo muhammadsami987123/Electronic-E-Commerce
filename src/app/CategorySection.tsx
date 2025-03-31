@@ -1,7 +1,13 @@
 "use client";
 import React, { useState } from "react";
 
-const categories = [
+interface Category {
+  id: number;
+  name: string;
+  icon: string;
+}
+
+const categories: Category[] = [
   { id: 1, name: "Phones", icon: "📱" },
   { id: 2, name: "Computers", icon: "💻" },
   { id: 3, name: "SmartWatch", icon: "⌚" },
@@ -11,9 +17,9 @@ const categories = [
 ];
 
 const CategorySection = function () {
-  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
-  const handleCategoryClick = (category) => {
+  const handleCategoryClick = (category: Category) => {
     setSelectedCategory(category.name);
   };
 
