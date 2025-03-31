@@ -111,7 +111,7 @@ const FlashSales = function () {
       }
       setShowNotification(true);
       setTimeout(() => setShowNotification(false), 3000);
-    } catch (error) {
+    } catch {
       setNotificationMessage("Error adding to cart");
       setShowNotification(true);
       setTimeout(() => setShowNotification(false), 3000);
@@ -143,7 +143,7 @@ const FlashSales = function () {
       {/* Header Section */}
       <div className="flex items-center space-x-2 mb-6">
         <div className="bg-red-700 w-2 h-8"></div>
-        <span className="text-2xl font-bold text-red-700">Today's</span>
+        <span className="text-2xl font-bold text-red-700">Todays</span>
       </div>
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold">Flash Sales</h2>

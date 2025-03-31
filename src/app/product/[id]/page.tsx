@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { addToCart } from "@/utils/cart";
-import { AiOutlineArrowLeft } from "react-icons/ai";
 
 interface Product {
   id: string;
@@ -622,7 +621,7 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
       <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-3xl font-bold text-gray-900 mb-4">Product Not Found</h1>
-          <p className="text-gray-600 mb-8">The product you're looking for doesn't exist.</p>
+          <p className="text-gray-600 mb-8">The product youwere looking for does not exist.</p>
           <Link
             href="/"
             className="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition duration-300"
@@ -645,7 +644,7 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
       }
       setShowNotification(true);
       setTimeout(() => setShowNotification(false), 3000);
-    } catch (error) {
+    } catch{
       setNotificationMessage("Error adding to cart");
       setShowNotification(true);
       setTimeout(() => setShowNotification(false), 3000);

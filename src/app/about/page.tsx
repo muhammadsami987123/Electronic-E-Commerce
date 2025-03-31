@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-
+import Image from "next/image";
 const AboutPage = function () {
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-6 md:px-12 lg:px-24">
@@ -11,7 +11,7 @@ const AboutPage = function () {
         </h1>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           Welcome to [Your Company Name]! We are dedicated to providing the best
-          services and products to our valued customers. Here's everything you
+          services and products to our valued customers. Here is everything you
           need to know about who we are and what we do.
         </p>
       </section>
@@ -37,7 +37,7 @@ const AboutPage = function () {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Team Member 1 */}
           <div className="text-center">
-            <img
+            <Image
               src="/team1.jpg"
               alt="Team Member 1"
               className="w-40 h-40 mx-auto rounded-full shadow-md"
@@ -50,7 +50,7 @@ const AboutPage = function () {
 
           {/* Team Member 2 */}
           <div className="text-center">
-            <img
+            <Image
               src="/team2.jpg"
               alt="Team Member 2"
               className="w-40 h-40 mx-auto rounded-full shadow-md"
@@ -63,7 +63,7 @@ const AboutPage = function () {
 
           {/* Team Member 3 */}
           <div className="text-center">
-            <img
+            <Image
               src="/team3.jpg"
               alt="Team Member 3"
               className="w-40 h-40 mx-auto rounded-full shadow-md"
@@ -82,8 +82,8 @@ const AboutPage = function () {
           Want to Learn More?
         </h2>
         <p className="text-gray-600 max-w-xl mx-auto mb-6">
-          Whether you're a customer, partner, or someone curious about our
-          story, we're always happy to connect.
+          Whether youwere a customer, partner, or someone curious about our
+          story, we were always happy to connect.
         </p>
         <a
           href="/contact"

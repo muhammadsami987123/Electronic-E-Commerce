@@ -16,7 +16,7 @@ const LoginPage: React.FC = function () {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const newErrors = {};
+    const newErrors: { email?: string; password?: string } = {};
 
     if (!formData.email.trim()) newErrors.email = "Email is required.";
     if (!formData.password.trim()) newErrors.password = "Password is required.";
@@ -97,7 +97,7 @@ const LoginPage: React.FC = function () {
           </button>
         </form>
         <p className="text-center text-sm text-gray-500 mt-6">
-          Don't have an account?{" "}
+          Do not have an account?{" "}
           <a
             href="/signup"
             className="text-blue-500 hover:underline hover:text-blue-600"

@@ -15,7 +15,7 @@ export default function OrderSuccessPage() {
         
         <h1 className="text-3xl font-bold mb-4">Thank You for Your Order!</h1>
         <p className="text-gray-600 mb-8">
-          Your order has been successfully placed. We'll send you an email with your order details and tracking information.
+          Your order has been successfully placed. We will send you an email with your order details and tracking information.
         </p>
 
         <div className="space-y-4">

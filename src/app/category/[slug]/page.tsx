@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { addToCart } from "@/utils/cart";
+import { addToCart, CartItem } from "@/utils/cart";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
 // Sample product data - In a real app, this would come from an API or database
@@ -57,7 +57,7 @@ const CategoryPage = ({ params }: { params: { slug: string } }) => {
   const [showNotification, setShowNotification] = useState(false);
   const [notificationMessage, setNotificationMessage] = useState("");
 
-  const handleAddToCart = async (product: any) => {
+  const handleAddToCart = async (product: CartItem) => {
     try {
       setAddingToCart(product.id);
       const success = addToCart(product);
@@ -121,7 +121,7 @@ const CategoryPage = ({ params }: { params: { slug: string } }) => {
         {categoryProducts.length === 0 ? (
           <div className="text-center py-12">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">No products found</h2>
-            <p className="text-gray-600 mb-8">We're working on adding products to this category.</p>
+            <p className="text-gray-600 mb-8">We were working on adding products to this category.</p>
             <Link
               href="/categories"
               className="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition duration-300"

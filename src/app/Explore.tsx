@@ -210,7 +210,7 @@ const Explore = function () {
       }
       setShowNotification(true);
       setTimeout(() => setShowNotification(false), 3000);
-    } catch (error) {
+    } catch  {
       setNotificationMessage("Error adding to cart");
       setShowNotification(true);
       setTimeout(() => setShowNotification(false), 3000);
