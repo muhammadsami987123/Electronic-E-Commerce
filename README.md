@@ -11,7 +11,7 @@ A modern **e-commerce website** built with Next.js and TypeScript, delivering a 
 ## 🌟 Live Demo
 
 Check out the live project on **Vercel**:  
-**[Electronic E-Commerce](https://electronic-e-commerce.vercel.app/)**
+**[Electronic E-Commerce](https://e-commerce--exclusive.vercel.app/)**
 
 ---
 
@@ -78,7 +78,7 @@ Follow these steps to set up the project locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/username/Electronic-E-Commerce.git
+git clone https://github.com/muhammadsami987123/Electronic-E-Commerce.git
 
 # Navigate to the project directory
 cd Electronic-E-Commerce
@@ -148,6 +148,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-Muhammad sami - [@yourtwitter](https://x.com/MSAMIWASEEM1) - m.samiwaseem1234@gmail.com
+Muhammad sami - [twitter](https://x.com/MSAMIWASEEM1) - m.samiwaseem1234@gmail.com
 
 Project Link: [https://e-commerce--exclusive.vercel.app/](https://github.com/username/Electronic-E-Commerce)
