@@ -3,10 +3,8 @@ import { FaFacebook } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaWhatsappSquare } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-
-
-
-
+import Link from "next/link";
+import { link } from "fs";
 const Footer = () => {
   return (
     <div className="bg-gray-200 p-8">
@@ -22,24 +20,27 @@ const Footer = () => {
         </div>
         <div className="md:w-1/4 md:mr-8">
           <h3 className="text-xl font-bold mb-4">Support</h3>
-          <p>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+          <p>Baldia Town , Karachi , Sindh , Pakistan.</p>
           <p>m.samiwaseem1234@gmail.com</p>
           <p>+923477286878</p>
         </div>
         <div className="md:w-1/4 md:mr-8">
           <h3 className="text-xl font-bold mb-4">Account</h3>
-          <p>My Account</p>
-          <p>Login / Register</p>
-          <p>Cart</p>
-          <p>Wishlist</p>
-          <p>Shop</p>
+          <div><a href="/">Home</a></div>
+          <div><a href="/login">Login / Register</a></div>  
+          <div><a href="#">Wishlist</a></div>
+          <div><a href="/cart">Cart</a></div>
+          {/* <div><a href="">Shop</a></div> */}
+          
         </div>
         <div className="md:w-1/4">
           <h3 className="text-xl font-bold mb-4">Quick Link</h3>
-          <p>Privacy Policy</p>
-          <p>Terms Of Use</p>
-          <p>FAQ</p>
-          <p>Contact</p>
+          
+          <div><a href="#">Privacy Policy</a></div>
+          <div><a href="#"> Terms Of Use</a></div>
+          <div><a href="#">FAQ</a></div>
+          <div><a href="contact">Contact</a></div>
+          
         </div>
       </div>
       <div className="flex justify-center mt-8">

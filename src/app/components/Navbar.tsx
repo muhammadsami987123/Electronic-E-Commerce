@@ -59,7 +59,7 @@ export default function Navbar() {
       <nav className="bg-white shadow-md">
         <div className="container mx-auto flex justify-between items-center py-4 px-6">
           {/* Logo */}
-          <h1 className="text-2xl font-bold text-black">Exclusive</h1>
+          <a href="/"> <h1 className="text-2xl font-bold text-black">Exclusive</h1></a>
 
           {/* Desktop Navigation */}
           <ul className="hidden lg:flex space-x-6 text-black font-medium">
