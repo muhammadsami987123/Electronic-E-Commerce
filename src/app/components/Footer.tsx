@@ -3,8 +3,7 @@ import { FaFacebook } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaWhatsappSquare } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import Link from "next/link";
-import { link } from "fs";
+
 const Footer = () => {
   return (
     <div className="bg-gray-200 p-8">
